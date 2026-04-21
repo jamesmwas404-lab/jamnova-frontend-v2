@@ -1,0 +1,63 @@
+const BASE_URL = "http://localhost:5000";
+
+/* ================= GET COMMENTS ================= */
+export const getComments = async (videoId) => {
+  const res = await fetch(`${BASE_URL}/comments/${videoId}`);
+  return res.json();
+};
+
+/* ================= ADD COMMENT ================= */
+export const addComment = async (videoId, text, token) => {
+  const res = await fetch(`${BASE_URL}/comments/${videoId}`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: "Bearer " + token,
+    },
+    body: JSON.stringify({ text }),
+  });
+
+  return res.json();
+};
+
+/* ================= LIKE COMMENT ================= */
+export const likeComment = async (commentId, token) => {
+  const res = await fetch(`${BASE_URL}/comments/${commentId}/like`, {
+    method: "POST",
+    headers: {
+      Authorization: "Bearer " + token,
+    },
+  });
+
+  return res.json();
+};
+
+/* ================= DISLIKE COMMENT ================= */
+export const dislikeComment = async (commentId, token) => {
+  const res = await fetch(`${BASE_URL}/comments/${commentId}/dislike`, {
+    method: "POST",
+    headers: {
+      Authorization: "Bearer " + token,
+    },
+  });
+
+  return res.json();
+};
+
+/* ================= DELETE COMMENT ================= */
+export const deleteComment = async (commentId, token) => {
+  const res = await fetch(`${BASE_URL}/comments/${commentId}`, {
+    method: "DELETE",
+    headers: {
+      Authorization: "Bearer " + token,
+    },
+  });
+
+  return res.json();
+};
+
+/* ================= GET SINGLE COMMENT ================= */
+export const getSingleComment = async (commentId) => {
+  const res = await fetch(`${BASE_URL}/comments/single/${commentId}`);
+  return res.json();
+};
