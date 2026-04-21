@@ -1,0 +1,96 @@
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 2px solid #00ffe0;
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+}
+
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #bbb;
+  margin: 0 0.8rem;
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00ffe0;
+  text-shadow: 0 0 8px #00ffe0, 0 0 15px #00ffe0;
+}
+
+/* Social Media Section */
+.footer-social {
+  margin: 1.5rem 0;
+}
+
+.neon-icon {
+  font-size: 2rem;
+  margin: 0 1rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  animation: pulse 2s infinite; /* Continuous pulsing glow */
+}
+
+/* Pulse animation for idle glow */
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 5px #00ffe0, 0 0 10px #00ffe0;
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 0 0 15px #00ffe0, 0 0 30px #00ffe0;
+    transform: scale(1.1);
+  }
+  100% {
+    text-shadow: 0 0 5px #00ffe0, 0 0 10px #00ffe0;
+    transform: scale(1);
+  }
+}
+
+/* Twitter Glow */
+.neon-icon.twitter:hover {
+  color: #1DA1F2;
+  text-shadow: 0 0 15px #1DA1F2, 0 0 30px #1DA1F2, 0 0 50px #1DA1F2;
+  transform: scale(1.2);
+}
+
+/* Instagram Glow */
+.neon-icon.instagram:hover {
+  color: #E1306C;
+  text-shadow: 0 0 15px #E1306C, 0 0 30px #E1306C, 0 0 50px #E1306C;
+  transform: scale(1.2);
+}
+
+/* YouTube Glow */
+.neon-icon.youtube:hover {
+  color: #FF0000;
+  text-shadow: 0 0 15px #FF0000, 0 0 30px #FF0000, 0 0 50px #FF0000;
+  transform: scale(1.2);
+}
+
+/* Discord Glow */
+.neon-icon.discord:hover {
+  color: #5865F2;
+  text-shadow: 0 0 15px #5865F2, 0 0 30px #5865F2, 0 0 50px #5865F2;
+  transform: scale(1.2);
+}
+
+/* LinkedIn Glow */
+.neon-icon.linkedin:hover {
+  color: #0077B5;
+  text-shadow: 0 0 15px #0077B5, 0 0 30px #0077B5, 0 0 50px #0077B5;
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  color: #888;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}

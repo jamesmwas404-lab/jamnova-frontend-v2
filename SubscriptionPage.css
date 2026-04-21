@@ -1,0 +1,104 @@
+/* Futuristic Subscription Page Styling */
+
+.subscription-container {
+  background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+  color: #fff;
+  padding: 3rem;
+  border-radius: 15px;
+  font-family: "Orbitron", sans-serif;
+  box-shadow: 0 0 25px rgba(0, 255, 224, 0.3);
+  text-align: center;
+}
+
+.subscription-title {
+  font-size: 2.5rem;
+  color: #00ffe0;
+  text-shadow: 0 0 15px #00ffe0;
+  margin-bottom: 2rem;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 280px;
+  border: 2px solid #333;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.plan-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 224, 0.4);
+}
+
+.plan-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #00ffe0;
+  text-shadow: 0 0 10px #00ffe0;
+}
+
+.plan-price {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: gold;
+  text-shadow: 0 0 12px gold;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.plan-features li {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  color: #ddd;
+}
+
+.upgrade-btn {
+  background: #00ffe0;
+  border: none;
+  padding: 1rem 1.8rem;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.upgrade-btn:hover {
+  background: #00cfc0;
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #00ffe0;
+}
+
+.premium-highlight {
+  border: 3px solid gold;
+  box-shadow: 0 0 25px gold;
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.premium-highlight .plan-title {
+  color: gold;
+  text-shadow: 0 0 15px gold;
+}
+
+.premium-highlight .upgrade-btn {
+  background: gold;
+  color: black;
+}
+
+.premium-highlight .upgrade-btn:hover {
+  background: #ffcc00;
+  box-shadow: 0 0 25px gold;
+}

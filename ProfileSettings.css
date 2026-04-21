@@ -1,0 +1,87 @@
+/* Futuristic Profile Settings Styling */
+
+.profile-container {
+  background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+  color: #fff;
+  padding: 3rem;
+  border-radius: 15px;
+  font-family: "Orbitron", sans-serif;
+  box-shadow: 0 0 25px rgba(0, 255, 224, 0.3);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+  font-size: 2.5rem;
+  color: #00ffe0;
+  text-shadow: 0 0 15px #00ffe0;
+}
+
+.premium-badge {
+  background: gold;
+  color: black;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  box-shadow: 0 0 20px gold;
+}
+
+.section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 2px solid #333;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.section:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: scale(1.02);
+}
+
+.section h2 {
+  color: #00ffe0;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #00ffe0;
+}
+
+.section label {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 1rem;
+}
+
+.section input[type="text"],
+.section input[type="email"],
+.section input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  color: #000;
+}
+
+.save-btn {
+  background: #00ffe0;
+  border: none;
+  padding: 0.9rem 1.6rem;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  margin-top: 1rem;
+}
+
+.save-btn:hover {
+  background: #00cfc0;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ffe0;
+}
