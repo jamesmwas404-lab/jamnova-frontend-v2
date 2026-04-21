@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ================= META ================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="JamNova - Modern video sharing platform" />
+
+  <title>JamNova</title>
+
+  <!-- ================= FONTS ================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ================= CSS ================= -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar">
+    <div class="logo">JamNova</div>
+
+    <nav class="nav-links">
+      <a href="#">🏠 Home</a>
+      <a href="#">🔥 Shorts</a>
+      <a href="#">📡 Live</a>
+      <a href="#">👥 Communities</a>
+      <a href="#">⬆ Upload</a>
+      <a href="#">👤 Profile</a>
+    </nav>
+  </aside>
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar">
+
+    <!-- SEARCH -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search videos, creators..." />
+      <button type="button">Search</button>
+    </div>
+
+    <!-- USER ACTIONS -->
+    <div class="user-actions">
+      <button id="uploadBtn">⬆ Upload</button>
+      <button id="loginBtn">Login</button>
+      <img src="default-avatar.png" alt="User Avatar" class="avatar" />
+    </div>
+
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="content">
+
+    <!-- VIDEO GRID -->
+    <section class="video-grid">
+      <!-- Videos will be loaded dynamically by script.js -->
+    </section>
+
+    <!-- SHORTS -->
+    <section class="shorts-section">
+      <h2>Shorts</h2>
+
+      <div class="shorts-grid">
+        <div class="short-card"><img src="short1.jpg" /></div>
+        <div class="short-card"><img src="short2.jpg" /></div>
+        <div class="short-card"><img src="short3.jpg" /></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>© 2026 JamNova. All rights reserved.</p>
+  </footer>
+
+  <!-- ================= SCRIPT ================= -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
